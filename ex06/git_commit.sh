@@ -1,0 +1,1 @@
+git log -5 --decorate=no --pretty=oneline --pretty=format:"%H"
