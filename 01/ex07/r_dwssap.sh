@@ -1,0 +1,1 @@
+echo `cat /etc/passwd | grep --invert-match "^#" | awk 'NR%2==0' | cut -d : -f 1 | rev | sort -r | awk "NR%2==0"` | sed 's/ /, /g' | tr '\n' .
